@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 // --- Configuration ---
-const FILE_PATH = './configurador/builder.js';
+const FILE_PATH = './assets/js/builder.js';
 const AFFILIATE_AMAZON = ''; // Add your Amazon Affiliate ID here
 const AFFILIATE_PCC = '';    // Add your PcComponentes Affiliate ID here
 

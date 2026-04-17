@@ -22,18 +22,18 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
         motherboard: [
             // LGA1700
-            { id: 'mb-i1', name: 'ASUS ROG MAXIMUS Z790 HERO', price: 649.00, socket: 'LGA1700', ramType: 'DDR5', description: 'Gama ultra-entusiasta', img: 'img/motherboard.png' },
-            { id: 'mb-i2', name: 'MSI PRO Z790-A WIFI', price: 245.00, socket: 'LGA1700', ramType: 'DDR5', description: 'Gama alta equilibrada', img: 'img/motherboard.png' },
-            { id: 'mb-i3', name: 'Gigabyte B760 GAMING X', price: 155.00, socket: 'LGA1700', ramType: 'DDR5', description: 'Gama media versátil', img: 'img/motherboard.png' },
-            { id: 'mb-i4', name: 'ASRock H610M-HDV', price: 85.00, socket: 'LGA1700', ramType: 'DDR4', description: 'Básica y compacta', img: 'img/motherboard.png' },
+            { id: 'mb-i1', name: 'ASUS ROG MAXIMUS Z790 HERO', price: 649.00, socket: 'LGA1700', ramType: 'DDR5', description: 'Gama ultra-entusiasta', img: 'assets/img/motherboard.png' },
+            { id: 'mb-i2', name: 'MSI PRO Z790-A WIFI', price: 245.00, socket: 'LGA1700', ramType: 'DDR5', description: 'Gama alta equilibrada', img: 'assets/img/motherboard.png' },
+            { id: 'mb-i3', name: 'Gigabyte B760 GAMING X', price: 155.00, socket: 'LGA1700', ramType: 'DDR5', description: 'Gama media versátil', img: 'assets/img/motherboard.png' },
+            { id: 'mb-i4', name: 'ASRock H610M-HDV', price: 85.00, socket: 'LGA1700', ramType: 'DDR4', description: 'Básica y compacta', img: 'assets/img/motherboard.png' },
             // AM5
-            { id: 'mb-a1', name: 'ASUS ROG CROSSHAIR X870E HERO', price: 699.00, socket: 'AM5', ramType: 'DDR5', description: 'El tope de gama para Zen 5', img: 'img/motherboard.png' },
-            { id: 'mb-a2', name: 'Gigabyte X870 AORUS ELITE', price: 325.00, socket: 'AM5', ramType: 'DDR5', description: 'Alto rendimiento AM5', img: 'img/motherboard.png' },
-            { id: 'mb-a3', name: 'MSI B650 GAMING PLUS WIFI', price: 175.00, socket: 'AM5', ramType: 'DDR5', description: 'Calidad/Precio AM5', img: 'img/motherboard.png' },
-            { id: 'mb-a4', name: 'ASRock A620M-HDV', price: 99.00, socket: 'AM5', ramType: 'DDR5', description: 'Económica para AM5', img: 'img/motherboard.png' },
+            { id: 'mb-a1', name: 'ASUS ROG CROSSHAIR X870E HERO', price: 699.00, socket: 'AM5', ramType: 'DDR5', description: 'El tope de gama para Zen 5', img: 'assets/img/motherboard.png' },
+            { id: 'mb-a2', name: 'Gigabyte X870 AORUS ELITE', price: 325.00, socket: 'AM5', ramType: 'DDR5', description: 'Alto rendimiento AM5', img: 'assets/img/motherboard.png' },
+            { id: 'mb-a3', name: 'MSI B650 GAMING PLUS WIFI', price: 175.00, socket: 'AM5', ramType: 'DDR5', description: 'Calidad/Precio AM5', img: 'assets/img/motherboard.png' },
+            { id: 'mb-a4', name: 'ASRock A620M-HDV', price: 99.00, socket: 'AM5', ramType: 'DDR5', description: 'Económica para AM5', img: 'assets/img/motherboard.png' },
             // AM4
-            { id: 'mb-a5', name: 'MSI MAG B550 TOMAHAWK', price: 149.00, socket: 'AM4', ramType: 'DDR4', description: 'La mejor B550', img: 'img/motherboard.png' },
-            { id: 'mb-a6', name: 'Gigabyte B450M DS3H', price: 75.00, socket: 'AM4', ramType: 'DDR4', description: 'Súper ventas económico', img: 'img/motherboard.png' }
+            { id: 'mb-a5', name: 'MSI MAG B550 TOMAHAWK', price: 149.00, socket: 'AM4', ramType: 'DDR4', description: 'La mejor B550', img: 'assets/img/motherboard.png' },
+            { id: 'mb-a6', name: 'Gigabyte B450M DS3H', price: 75.00, socket: 'AM4', ramType: 'DDR4', description: 'Súper ventas económico', img: 'assets/img/motherboard.png' }
         ],
         ram: [
             { id: 'ram-d5-1', name: 'CORSAIR Vengeance 32GB (2x16) DDR5 6000MHz', price: 125.00, type: 'DDR5', description: 'Optimizado para AMD/Intel' },
