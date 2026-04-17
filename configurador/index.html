@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo PC | Construye y Mantén tu PC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <i class="fa-solid fa-microchip"></i> Mundo <span class="highlight">PC</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="builder.html">Configurador</a></li>
+                <li><a href="#maintenance">Mantenimiento</a></li>
+                <li><a href="../mantenimiento/index.html">Guía Completa <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fa-solid fa-moon" id="theme-icon"></i>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <h1>Construye tu PC Ideal.<br>Mantén su Rendimiento al <span class="highlight">Máximo</span>.</h1>
+                <p>La guía definitiva para configurar el ordenador perfecto según tus necesidades y aprender a mantenerlo como el primer día.</p>
+                <div class="cta-buttons">
+                    <a href="builder.html" class="btn btn-primary">Empezar a Configurar <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#maintenance" class="btn btn-secondary">Guía de Mantenimiento</a>
+                </div>
+            </div>
+            <div class="hero-bg-overlay"></div>
+        </section>
+
+        <!-- Configurator Section -->
+        <section id="configurator" class="section">
+            <div class="container">
+                <h2 class="section-title">Configurador de PC</h2>
+                <div class="configurator-container">
+                    <div id="step-1" class="step active">
+                        <h3>¿Para qué usarás principalmente el PC?</h3>
+                        <div class="options-grid">
+                            <div class="option-card" data-usage="gaming">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <h4>Gaming</h4>
+                                <p>Jugar a los últimos títulos con gráficos ultra.</p>
+                            </div>
+                            <div class="option-card" data-usage="editing">
+                                <i class="fa-solid fa-video"></i>
+                                <h4>Edición de Video / 3D</h4>
+                                <p>Renderizado, modelado y edición pesada.</p>
+                            </div>
+                            <div class="option-card" data-usage="office">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <h4>Oficina / Estudios</h4>
+                                <p>Navegación, ofimática y multimedia ligera.</p>
+                            </div>
+                            <div class="option-card" data-usage="coding">
+                                <i class="fa-solid fa-code"></i>
+                                <h4>Programación</h4>
+                                <p>Desarrollo de software, máquinas virtuales.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="step-2" class="step">
+                        <h3>¿Cuál es tu presupuesto aproximado?</h3>
+                        <div class="options-grid">
+                            <div class="option-card" data-budget="low">
+                                <i class="fa-solid fa-wallet"></i>
+                                <h4>Básico</h4>
+                                <p>Económico pero funcional.</p>
+                            </div>
+                            <div class="option-card" data-budget="mid">
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                                <h4>Medio</h4>
+                                <p>Equilibrio entre precio y rendimiento.</p>
+                            </div>
+                            <div class="option-card" data-budget="high">
+                                <i class="fa-solid fa-gem"></i>
+                                <h4>Alto</h4>
+                                <p>Máximo rendimiento sin compromisos.</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary back-btn">Atrás</button>
+                    </div>
+
+                    <div id="result-step" class="step">
+                        <h3>Tu Configuración Recomendada</h3>
+                        <div id="recommendation-content" class="recommendation-box">
+                            <!-- JS will populate this -->
+                        </div>
+                        <button class="btn btn-primary restart-btn">Configurar Otro</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Maintenance Section -->
+        <section id="maintenance" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Mantenimiento y Cuidados</h2>
+                <div class="cards-grid">
+                    <div class="info-card">
+                        <div class="icon-box"><i class="fa-solid fa-broom"></i></div>
+                        <h3>Limpieza Física</h3>
+                        <p>Aprende a limpiar el polvo de los ventiladores, cambiar la pasta térmica y asegurar un flujo de aire óptimo para evitar sobrecalentamientos.</p>
+                        <a href="../mantenimiento/index.html#maintenance" class="link-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon-box"><i class="fa-brands fa-windows"></i></div>
+                        <h3>Optimización Software</h3>
+                        <p>Mantén tus drivers actualizados, elimina archivos basura y configura tu sistema operativo para obtener el máximo rendimiento.</p>
+                        <a href="../mantenimiento/index.html#maintenance" class="link-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon-box"><i class="fa-solid fa-temperature-full"></i></div>
+                        <h3>Control de Temperaturas</h3>
+                        <p>Monitorea las temperaturas de tu CPU y GPU. Conoce los rangos seguros y cómo actuar si tu PC se calienta demasiado.</p>
+                        <a href="../mantenimiento/index.html#maintenance" class="link-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Mundo <span class="highlight">PC</span></h3>
+                <p>Tu aliado en el mundo del hardware.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mundo PC. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

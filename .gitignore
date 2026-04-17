@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+dist/
+build/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project specifics
+*.log
+.env
+.antigravity/
+brain/
+scratch/
+implementation_plan.md
+task.md
+walkthrough.md
+research_notes.md
+analysis_results.md
+experiment_results.md
+artifacts/

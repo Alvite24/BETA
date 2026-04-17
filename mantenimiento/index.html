@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantenimiento y Cuidados - PCBuilderPro</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme"> <!-- Dark theme by default -->
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <i class="fa-solid fa-microchip"></i>
+                <span class="logo-text">PCBuilder<span class="highlight">Pro</span></span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#maintenance" class="active">Guía de Cuidados</a></li>
+                    <li><a href="../configurador/index.html">Ir al Configurador <i class="fa-solid fa-arrow-right text-sm"></i></a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Menu" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-background">
+                <div class="glow-orb primary-orb"></div>
+                <div class="glow-orb secondary-orb"></div>
+            </div>
+            <div class="container hero-content">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span> Guía Completa 2026
+                </div>
+                <h1 class="hero-title">Cuida tu Setup.<br>Maximiza su <span class="text-gradient">Vida Útil</span>.</h1>
+                <p class="hero-subtitle">Descubre las mejores prácticas de mantenimiento, limpieza y optimización para que tu PC rinda como el primer día durante años.</p>
+                <div class="hero-actions">
+                    <a href="#maintenance" class="btn btn-primary btn-glow">
+                        Explorar Guías <i class="fa-solid fa-arrow-down ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Maintenance Guides Section -->
+        <section id="maintenance" class="maintenance-section pb-20">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">El Arte del Mantenimiento</h2>
+                    <p class="section-desc">Seis pilares fundamentales para mantener tu sistema en óptimas condiciones, tanto a nivel físico como lógico.</p>
+                </div>
+
+                <div class="guides-grid">
+                    <!-- 1. Limpieza Física (Original) -->
+                    <article class="guide-card">
+                        <div class="card-icon-wrapper">
+                            <i class="fa-solid fa-wind drop-shadow-icon"></i>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">Hardware</span>
+                            <h3 class="card-title">Limpieza Física y Flujo de Aire</h3>
+                            <p class="card-text">La acumulación de polvo es el enemigo número uno. Aprende técnicas seguras para limpiar ventiladores, disipadores y filtros para asegurar un flujo de aire óptimo y sin obstrucciones, reduciendo el ruido y el calor.</p>
+                            
+                            <div class="card-checklist">
+                                <ul>
+                                    <li><i class="fa-solid fa-check-circle text-success"></i> Uso correcto de aire comprimido</li>
+                                    <li><i class="fa-solid fa-check-circle text-success"></i> Limpieza de aspas de ventiladores</li>
+                                    <li><i class="fa-solid fa-check-circle text-success"></i> Sustitución de pasta térmica (anual)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 2. Optimización Software (Original) -->
+                    <article class="guide-card featured">
+                        <div class="card-border-glow"></div>
+                        <div class="card-icon-wrapper">
+                            <i class="fa-brands fa-windows drop-shadow-icon"></i>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">Software</span>
+                            <h3 class="card-title">Optimización de Sistema OS</h3>
+                            <p class="card-text">Un Windows limpio es un Windows rápido. Las actualizaciones de controladores y la eliminación del bloatware son esenciales. Descubre cómo mantener tu sistema operativo libre de procesos innecesarios.</p>
+                            
+                            <div class="card-checklist">
+                                <ul>
+                                    <li><i class="fa-solid fa-check-circle text-success"></i> Actualización de drivers (GPU, Chipset)</li>
+                                    <li><i class="fa-solid fa-check-circle text-success"></i> Desactivar inicio automático de apps</li>
+                                    <li><i class="fa-solid fa-check-circle text-success"></i> Limpieza de temporales y registro</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 3. Control de Temperaturas (Original) -->
+                    <article class="guide-card">
+                        <div class="card-icon-wrapper text-danger">
+                            <i class="fa-solid fa-temperature-half drop-shadow-icon"></i>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">Monitorización</span>
+                            <h3 class="card-title">Control Térmico (Temperaturas)</h3>
+                            <p class="card-text">El calor degrada los componentes. Aprende a utilizar software de monitorización para mantener los grados a raya y configurar curvas de ventilación personalizadas que equilibren rendimiento y silencio.</p>
+                            
+                            <div class="card-checklist">
+                                <ul>
+                                    <li><i class="fa-solid fa-check-circle text-success"></i> Rangos seguros para CPU (< 85°C)</li>
+                                    <li><i class="fa-solid fa-check-circle text-success"></i> Monitorización de hotspot en GPU</li>
+                                    <li><i class="fa-solid fa-check-circle text-success"></i> Undervolting básico</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 4. Cable Management (Nuevo) -->
+                    <article class="guide-card">
+                        <div class="card-icon-wrapper">
+                            <i class="fa-solid fa-bezier-curve drop-shadow-icon"></i>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">Estética y Flujo</span>
+                            <h3 class="card-title">Gestión de Cables Oculta</h3>
+                            <p class="card-text">No es solo por estética. Una maraña de cables bloquea el aire que entra frontalmente hacia la tarjeta gráfica y el procesador, aumentando las temperaturas generales del sistema notablemente.</p>
+                            
+                            <div class="card-checklist">
+                                <ul>
+                                    <li><i class="fa-solid fa-check-circle text-success"></i> Ruteo por la parte trasera del chasis</li>
+                                    <li><i class="fa-solid fa-check-circle text-success"></i> Uso de bridas y correas de velcro</li>
+                                    <li><i class="fa-solid fa-check-circle text-success"></i> Extensiones malladas para mejor look</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 5. Actualizaciones de Hardware (Nuevo) -->
+                    <article class="guide-card">
+                        <div class="card-icon-wrapper">
+                            <i class="fa-solid fa-memory drop-shadow-icon"></i>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">Escalabilidad</span>
+                            <h3 class="card-title">Cuándo Actualizar el Hardware</h3>
+                            <p class="card-text">Evita los cuellos de botella (bottlenecks). Identifica qué componente se está quedando corto antes de comprar un PC entero nuevo. A menudo, subir la RAM o cambiar a un SSD NVMe revive equipos viejos.</p>
+                            
+                            <div class="card-checklist">
+                                <ul>
+                                    <li><i class="fa-solid fa-check-circle text-success"></i> Añadir memoria RAM (Dual Channel)</li>
+                                    <li><i class="fa-solid fa-check-circle text-success"></i> Migrar SO a un almacenamiento M.2</li>
+                                    <li><i class="fa-solid fa-check-circle text-success"></i> Calcular cuello de botella CPU/GPU</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 6. Backups/Copias de Seguridad (Nuevo) -->
+                    <article class="guide-card">
+                        <div class="card-icon-wrapper">
+                            <i class="fa-solid fa-cloud-arrow-up drop-shadow-icon"></i>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">Seguridad</span>
+                            <h3 class="card-title">Estrategia de Copias 3-2-1</h3>
+                            <p class="card-text">El hardware se reemplaza, los datos no. El desgaste de los SSD o un ataque de Ransomware puede destruir meses de trabajo u horas de partidas guardadas en segundos si no tienes un plan de contingencia.</p>
+                            
+                            <div class="card-checklist">
+                                <ul>
+                                    <li><i class="fa-solid fa-check-circle text-success"></i> Copias locales (Discos Duros Externos)</li>
+                                    <li><i class="fa-solid fa-check-circle text-success"></i> Almacenamiento Cifrado en la Nube</li>
+                                    <li><i class="fa-solid fa-check-circle text-success"></i> Imágenes del Sistema (Puntos de rest.)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section antes del Footer -->
+        <section class="cta-banner">
+            <div class="container cta-container">
+                <div class="cta-text">
+                    <h2>¿Listo para montar tu propia máquina?</h2>
+                    <p>Utiliza nuestra herramienta inteligente para encontrar los mejores componentes para tu presupuesto.</p>
+                </div>
+                <a href="../configurador/index.html" class="btn btn-primary">Ir al Configurador de PC</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="fa-solid fa-microchip"></i>
+                    <span class="logo-text">PCBuilder<span class="highlight">Pro</span></span>
+                </div>
+                <p class="footer-desc">Proyecto enfocado en enseñar a ensamblar y mantener equipos informáticos para obtener su máximo rendimiento y vida útil.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Alvite24" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links-group">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="#maintenance">Guías de Limpieza</a></li>
+                    <li><a href="#maintenance">Optimización OS</a></li>
+                    <li><a href="#maintenance">Software de Temperatura</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-group">
+                <h3>Proyecto</h3>
+                <ul>
+                    <li><a href="../configurador/index.html">El Configurador</a></li>
+                    <li><a href="https://github.com/Alvite24/Pagina-web-Prueba-2" target="_blank">Código Fuente</a></li>
+                    <li><a href="#">Reportar un Bug</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Alvite24. Proyecto de Prueba #2.</p>
+            <div class="footer-legal">
+                <a href="#">Aviso Legal</a>
+                <span class="separator">|</span>
+                <a href="#">Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
