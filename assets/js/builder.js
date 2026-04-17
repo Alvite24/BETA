@@ -329,4 +329,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     buyBtn.addEventListener('click', () => { alert('¡Genial! Redirigiendo a Mundo PC...'); });
+
+    // --- Supabase Save Build Logic ---
+    const saveBuildBtn = document.getElementById('save-build-btn');
+    if (saveBuildBtn) {
+        saveBuildBtn.addEventListener('click', async () => {
+            const { data: { user } } = await supabase.auth.getUser();
+            if (!user) {
+                alert('Debes iniciar sesión para guardar tu configuración.');
+                return;
+            }
+
+            // Prepare data
+            const buildData = {
+                user_id: user.id,
+                config: currentBuild,
+                total_price: parseFloat(totalPriceEl.textContent.replace('€', '').replace(',', '.'))
+            };
+
+            const { data, error } = await supabase.from('builds').insert([buildData]);
+
+            if (error) {
+                alert('Error al guardar: ' + error.message);
+                console.error(error);
+            } else {
+                alert('¡Configuración guardada con éxito en tu cuenta de Mundo PC!');
+            }
+        });
+    }
 });
