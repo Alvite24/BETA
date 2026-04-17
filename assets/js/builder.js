@@ -334,7 +334,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const saveBuildBtn = document.getElementById('save-build-btn');
     if (saveBuildBtn) {
         saveBuildBtn.addEventListener('click', async () => {
-            const { data: { user } } = await supabase.auth.getUser();
+            const { data: { user } } = await _supabase.auth.getUser();
             if (!user) {
                 alert('Debes iniciar sesión para guardar tu configuración.');
                 return;
@@ -347,7 +347,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 total_price: parseFloat(totalPriceEl.textContent.replace('€', '').replace(',', '.'))
             };
 
-            const { data, error } = await supabase.from('builds').insert([buildData]);
+            const { data, error } = await _supabase.from('builds').insert([buildData]);
 
             if (error) {
                 alert('Error al guardar: ' + error.message);

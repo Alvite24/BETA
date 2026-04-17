@@ -1,7 +1,9 @@
 // --- Supabase Configuration ---
 const SUPABASE_URL = 'https://ktvmekzhyicftdgilnrh.supabase.co';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt0dm1la3poeWljZnRkZ2lsbnJoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0MzA2ODYsImV4cCI6MjA5MjAwNjY4Nn0.w71c8cUT-W2oec7ZP7KdHoWvn86lStLASMyBsv1H70g';
-const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+// The global variable from the CDN is 'supabase'
+const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 // --- State and UI ---
 let isSignUpMode = false;
@@ -20,7 +22,7 @@ const authNode = document.getElementById('auth-node');
 // --- Auth Logic ---
 
 async function checkUserSession() {
-    const { data: { user } } = await supabase.auth.getUser();
+    const { data: { user } } = await _supabase.auth.getUser();
     currentUser = user;
     updateAuthUI(user);
 }
@@ -51,7 +53,7 @@ function updateAuthUI(user) {
 }
 
 async function handleLogin(email, password) {
-    const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+    const { data, error } = await _supabase.auth.signInWithPassword({ email, password });
     if (error) {
         alert('Error al iniciar sesión: ' + error.message);
     } else {
@@ -61,7 +63,7 @@ async function handleLogin(email, password) {
 }
 
 async function handleSignUp(email, password) {
-    const { data, error } = await supabase.auth.signUp({ email, password });
+    const { data, error } = await _supabase.auth.signUp({ email, password });
     if (error) {
         alert('Error al registrarse: ' + error.message);
     } else {
@@ -72,7 +74,7 @@ async function handleSignUp(email, password) {
 }
 
 async function handleLogout() {
-    await supabase.auth.signOut();
+    await _supabase.auth.signOut();
     currentUser = null;
     updateAuthUI(null);
 }
@@ -126,7 +128,7 @@ if (closeAuthBtn) closeAuthBtn.addEventListener('click', closeAuthModal);
 checkUserSession();
 
 // Listen for auth changes
-supabase.auth.onAuthStateChange((event, session) => {
+_supabase.auth.onAuthStateChange((event, session) => {
     if (event === 'SIGNED_IN') {
         currentUser = session.user;
         updateAuthUI(session.user);
